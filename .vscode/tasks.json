@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Digital Clock",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": ["/c", "${workspaceFolder}\\build.bat"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Digital Clock",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": ["/c", "${workspaceFolder}\\build\\DigitalClock.exe"],
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
